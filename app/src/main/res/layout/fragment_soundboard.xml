@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- ImageView pour afficher le GIF (occupant un tiers de l'écran) -->
+    <ImageView
+        android:id="@+id/gif_imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:rowCount="3"
-        android:columnCount="2"
-        android:gravity="center">
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/test1gif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.33" /> <!-- Prendre 1/3 de la hauteur de l'écran -->
+
+    <!-- GridLayout pour les boutons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/gif_imageView"
+        app:layout_constraintHeight_percent="0.66">
+
+        <!-- Boutons pour jouer des sons -->
 
         <Button
             android:id="@+id/button_sound1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sound 1" />
+            android:text="Ma geule" />
 
         <Button
             android:id="@+id/button_sound2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sound 2" />
+            android:text="Huraken" />
 
         <Button
             android:id="@+id/button_sound3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sound 3" />
+            android:text="Salut" />
 
         <Button
             android:id="@+id/button_sound4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sound 4" />
+            android:text="Bonjour" />
 
     </GridLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
