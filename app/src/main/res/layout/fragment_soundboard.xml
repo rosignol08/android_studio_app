@@ -11,21 +11,25 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/button_sound1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sound 1" />
 
         <Button
+            android:id="@+id/button_sound2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sound 2" />
 
         <Button
+            android:id="@+id/button_sound3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sound 3" />
 
         <Button
+            android:id="@+id/button_sound4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sound 4" />
