@@ -1,79 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
--->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="16dp">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <!-- Image principale -->
-    <ImageView
-        android:id="@+id/image_johnny"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/johnny_hallyday_tete" />
-
-    <!-- Titre -->
-    <TextView
-        android:id="@+id/title"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Johnny Hallyday"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        android:paddingHorizontal="14dp"
+        android:paddingTop="14dp">
 
-    <!-- Sous-titre -->
-    <TextView
-        android:id="@+id/subtitle"
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_scrollFlags="noScroll">
+
+            <!-- Images avec contentDescription -->
+            <ImageView
+                android:id="@+id/image_johnny_jeune"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/johnny_jeune"
+                android:contentDescription="Johnny Hallyday jeune"
+                android:fitsSystemWindows="true"/>
+
+            <ImageView
+                android:id="@+id/image_johnny_halliday_tete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha="0"
+                android:src="@drawable/johnny_hallyday_tete"
+                android:contentDescription="Johnny Hallyday d'âge moyen"
+                android:fitsSystemWindows="true"/>
+
+            <ImageView
+                android:id="@+id/image_johnny_vieux"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha="0"
+                android:src="@drawable/johnny_vieux"
+                android:contentDescription="Johnny Hallyday plus âgé"
+                android:fitsSystemWindows="true"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/johnny_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            app:layout_scrollFlags="noScroll"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Un monument de la musique française"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textStyle="italic" />
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!-- Biographie -->
-    <TextView
-        android:id="@+id/biography"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Johnny Hallyday, né Jean-Philippe Smet le 15 juin 1943 à Paris et décédé le 5 décembre 2017 à Marnes-la-Coquette, était un chanteur, compositeur et acteur français. Il est considéré comme une icône du rock et une légende de la musique en France, avec une carrière de plus de 50 ans."
-        android:textSize="16sp"
-        android:lineSpacingExtra="4dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
 
-    <!-- Autres images -->
-    <ImageView
-        android:id="@+id/image_concert"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/johnny_concert" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_jeunesse_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
 
-    <TextView
-        android:id="@+id/legend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Johnny Hallyday en concert - une expérience légendaire"
-        android:textSize="14sp"
-        android:gravity="center"
-        android:textStyle="italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_jeunesse_text"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"/>
 
-</LinearLayout>
-</ScrollView>
+            <!-- Section Succès -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_succes_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_succes_text"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Section Scène -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_scene_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_scene_text"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Section Vie Personnelle -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_vie_perso_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_vie_perso_text"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Section Héritage -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_heritage_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_heritage_text"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Citation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johnny_citation"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="16dp"/>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

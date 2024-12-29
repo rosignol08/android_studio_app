@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">projet_johnny</string>
+    <string name="johnny_name">Johnny Hallyday</string>
+    <string name="johnny_subtitle">Un monument de la musique française</string>
+    <string name="johnny_jeunesse_title">Jeunesse et Débuts</string>
+    <string name="johnny_succes_title">L\'ascension d\'une icône</string>
+    <string name="johnny_scene_title">Le roi de la scène</string>
+    <string name="johnny_vie_perso_title">Vie personnelle</string>
+    <string name="johnny_heritage_title">L\'héritage d\'une légende</string>
+    <string name="johnny_biography">Johnny Hallyday, né Jean-Philippe Smet le 15 juin 1943 à Paris et décédé le 5 décembre 2017 à Marnes-la-Coquette, était un chanteur, compositeur et acteur français. Il est considéré comme une icône du rock et une légende de la musique en France, avec une carrière de plus de 50 ans.</string>
+    <string name="johnny_concert_legend">Johnny Hallyday en concert - une expérience légendaire</string>
+    <!-- Section Jeunesse -->
+    <string name="johnny_jeunesse_text">Johnny Hallyday, né Jean-Philippe Smet le 15 juin 1943 à Paris, est une figure emblématique de la musique française. Son enfance est marquée par l\'instabilité : élevé par sa tante paternelle Hélène Mar et son mari, le danseur américain Lee Halliday, dont il prendra plus tard le nom de scène.
+
+    Très jeune, il est plongé dans le monde du spectacle, accompagnant ses parents adoptifs dans leurs tournées à travers l\'Europe. C\'est à cette époque qu\'il découvre sa passion pour la musique et particulièrement le rock\'n\'roll américain qui commence à déferler sur l\'Europe.</string>
+
+    <!-- Section Succès -->
+    <string name="johnny_succes_text">Sa carrière démarre véritablement en 1960, avec son premier 45 tours \"Laisse les filles\". Le succès est immédiat. Johnny devient rapidement le visage du rock\'n\'roll à la française, adaptant les tubes américains et créant son propre style. Ses premiers grands succès comme \"Retiens la nuit\" (1961) et \"Que je t\'aime\" (1969) le propulsent au rang de star nationale.
+
+    Les années 1960–1970 sont marquées par une succession de tubes qui resteront dans l\'histoire : \"Le Pénitencier\", \"Noir c\'est noir\", \"Je te promets\", \"Que je t\'aime\", \"L\'envie\". Johnny ne se contente pas de copier le rock américain, il le réinvente à sa manière, créant un style unique qui parlera à des générations de Français.</string>
+
+    <!-- Section Scène -->
+    <string name="johnny_scene_text">Sur scène, Johnny Hallyday était inégalable. Ses concerts étaient de véritables shows à l\'américaine, avec des mises en scène spectaculaires. Du Parc des Princes en 1993 au Stade de France en 1998, en passant par la Tour Eiffel en 2000, chacun de ses concerts était un événement national.
+
+    Sa capacité à remplir les plus grandes salles et stades de France ne s\'est jamais démentie. Ses tournées étaient toujours des succès phénoménaux, comme les \"Johnny allume le feu\" ou \"Tour 66\". Sa dernière tournée, \"Rester Vivant Tour\" en 2015-2016, a une fois de plus démontré son statut unique dans la musique française.</string>
+
+    <!-- Section Vie Personnelle -->
+    <string name="johnny_vie_perso_text">Sa vie privée a toujours fasciné le public. Marié cinq fois, notamment à Sylvie Vartan, avec qui il formait le couple le plus glamour des années 60, puis à Laeticia Hallyday qui restera sa dernière épouse. Père de quatre enfants : David, Laura, Jade et Joy, sa vie familiale a souvent fait la une des magazines.
+
+    Ses combats personnels, notamment contre ses addictions et la maladie, ont toujours été menés au grand jour, renforçant le lien unique qu\'il entretenait avec son public. Cette authenticité, parfois brutale, a contribué à forger sa légende.</string>
+
+    <!-- Section Héritage -->
+    <string name="johnny_heritage_text">Johnny Hallyday s\'est éteint le 5 décembre 2017 à Marnes-la-Coquette, laissant la France orpheline de son plus grand rocker. Son héritage est immense : plus de 110 millions d\'albums vendus, près de 1000 chansons enregistrées, des concerts mythiques et une influence indélébile sur la musique française.
+
+    L\'hommage populaire qui lui a été rendu lors de ses obsèques, avec plus d\'un million de personnes dans les rues de Paris, témoigne de la place unique qu\'il occupait dans le cœur des Français. Plus qu\'un chanteur, Johnny était une icône, un symbole de liberté et de rock\'n\'roll à la française.</string>
+
+    <!-- Citation mémorable -->
+    <string name="johnny_citation">\"Ce n\'est pas la musique qui est dangereuse, c\'est la vie qui est dangereuse.\"</string>
 </resources>
