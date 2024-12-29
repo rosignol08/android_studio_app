@@ -19,4 +19,47 @@
         android:background="?android:attr/windowBackground"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
+    <!-- Stickers : Image clickable qui va tomber -->
+    <ImageView
+        android:id="@+id/sticker1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sticker1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp" />
+    <ImageView
+        android:id="@+id/sticker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sticker2"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/sticker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sticker3"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/sticker4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sticker4"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/sticker5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sticker5"
+        android:visibility="gone" />
+    <ImageButton
+        android:id="@+id/resetButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_reset"
+        android:background="@android:color/transparent"
+        android:contentDescription="reset_button"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
