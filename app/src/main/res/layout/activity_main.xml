@@ -53,13 +53,14 @@
         android:visibility="gone" />
     <ImageButton
         android:id="@+id/resetButton"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:src="@drawable/ic_reset"
-        android:background="@android:color/transparent"
-        android:contentDescription="reset_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_reset"
+        android:contentDescription="@string/reset_button"
+        android:layout_gravity="center_vertical|start"
+        android:scaleType="centerInside" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

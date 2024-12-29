@@ -36,4 +36,5 @@
 
     <!-- Citation mémorable -->
     <string name="johnny_citation">\"Ce n\'est pas la musique qui est dangereuse, c\'est la vie qui est dangereuse.\"</string>
+    <string name="reset_button">bouton de reinitialisation</string>
 </resources>
