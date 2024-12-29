@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <!-- ViewPager2 pour gérer les swipes entre fragments -->
+    <!-- Contenu des fragments (ViewPager2) -->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Barre de navigation (TabLayout) en premier plan -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/windowBackground"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
