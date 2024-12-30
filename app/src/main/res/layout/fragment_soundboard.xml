@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="4dp">
     <!-- ImageView pour afficher le GIF (occupant un tiers de l'écran) -->
     <ImageView
         android:id="@+id/gif_imageView"
@@ -31,7 +33,7 @@
 
         <Button
             android:id="@+id/button_sound1"
-            android:layout_width="wrap_content"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="0"
             android:layout_column="0"
@@ -41,7 +43,7 @@
 
         <Button
             android:id="@+id/button_sound2"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="0"
             android:layout_column="1"
@@ -51,7 +53,7 @@
 
         <Button
             android:id="@+id/button_sound3"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="0"
             android:layout_column="2"
@@ -61,7 +63,7 @@
 
         <Button
             android:id="@+id/button_sound4"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="1"
             android:layout_column="0"
@@ -71,7 +73,7 @@
 
         <Button
             android:id="@+id/button_sound5"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="1"
             android:layout_column="1"
@@ -81,7 +83,7 @@
 
         <Button
             android:id="@+id/button_sound6"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="1"
             android:layout_column="2"
@@ -91,7 +93,7 @@
 
         <Button
             android:id="@+id/button_sound7"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="2"
             android:layout_column="0"
@@ -101,7 +103,7 @@
 
         <Button
             android:id="@+id/button_sound8"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="2"
             android:layout_column="1"
@@ -111,7 +113,7 @@
 
         <Button
             android:id="@+id/button_sound9"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="2"
             android:layout_column="2"
@@ -121,7 +123,7 @@
 
         <Button
             android:id="@+id/button_sound10"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="3"
             android:layout_column="0"
@@ -131,7 +133,7 @@
 
         <Button
             android:id="@+id/button_sound11"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="3"
             android:layout_column="1"
@@ -141,7 +143,7 @@
 
         <Button
             android:id="@+id/button_sound12"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="3"
             android:layout_column="2"
@@ -151,7 +153,7 @@
 
         <Button
             android:id="@+id/button_sound13"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="4"
             android:layout_column="0"
@@ -161,7 +163,7 @@
 
         <Button
             android:id="@+id/button_sound14"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="4"
             android:layout_column="1"
@@ -171,7 +173,7 @@
 
         <Button
             android:id="@+id/button_sound15"
-            android:layout_width="19mm"
+            android:layout_width="17mm"
             android:layout_height="10mm"
             android:layout_row="4"
             android:layout_column="2"
